@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Ninja Quiz</title>
+</head>
+
+<body class="bg-dark">
+
+    <!-- Header -->
+    <div class="py-4 text-center bg-secondary">
+        <h2 class="text-warning display-1 fw-bold py-2">Quiz by RV</h2>
+    </div>
+
+    <!-- Result -->
+    <div id="resultContainer" class="py-4 text-center bg-dark d-none">
+        <h2 class="text-light display-5">You are <span id="result" class="display-1 text-warning">0%</span> friend</h2>
+    </div>
+
+    <!-- Form -->
+    <div class="quiz bg-dark">
+        <div class="container">
+            <h2 id="feedback" class="text-warning px-3 py-4">Are you ready?</h2>
+
+            <!-- Questions -->
+            <form class="quiz-form text-light">
+                <ol>
+                    <li class="py-3">
+                        <p>How do you reach RV?</p>
+                        <div class="form-check text-white-50 py-1">
+                            <input type="radio" name="q1" value="A">
+                            <label class="form-check-label">Call him</label>
+                        </div>
+                        <div class="form-check text-white-50 py-1">
+                            <input type="radio" name="q1" value="B">
+                            <label class="form-check-label">Ask for directions</label>
+                        </div>
+                    </li>
+                    <li class="py-3">
+                        <p>RV's favourite animal?</p>
+                        <div class="form-check text-white-50 py-1">
+                            <input type="radio" name="q2" value="A">
+                            <label class="form-check-label">Cat</label>
+                        </div>
+                        <div class="form-check text-white-50 py-1">
+                            <input type="radio" name="q2" value="B">
+                            <label class="form-check-label">Parrot</label>
+                        </div>
+                    </li>
+                    <li class="py-3">
+                        <p>Hmm?</p>
+                        <div class="form-check text-white-50 py-1">
+                            <input type="radio" name="q3" value="A">
+                            <label class="form-check-label">C++</label>
+                        </div>
+                        <div class="form-check text-white-50 py-1">
+                            <input type="radio" name="q3" value="B">
+                            <label class="form-check-label">CSS3</label>
+                        </div>
+                    </li>
+                    <li class="py-3">
+                        <p>This should be easy..</p>
+                        <div class="form-check text-white-50 py-1">
+                            <input type="radio" name="q4" value="A">
+                            <label class="form-check-label">Codechef</label>
+                        </div>
+                        <div class="form-check text-white-50 py-1">
+                            <input type="radio" name="q4" value="B">
+                            <label class="form-check-label">Codewars</label>
+                        </div>
+                    </li>
+                </ol>
+                <div class="text-end p-4">
+                    <button type="submit" class="btn btn-warning">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
